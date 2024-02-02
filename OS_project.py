@@ -42,7 +42,6 @@ def fcfs_submit():
         result_label = CTkLabel(master=result_frame, text=data_str, font=("Times New Roman", 25), justify="center")
         result_label.grid(row=row_idx, column=0, sticky="w", pady=(0, 10), padx = 200)
 
-    # Display average turnaround and waiting times separately
     row_idx += 1
     average_label = CTkLabel(master=result_frame, text=f"Average Turnaround Time: {result_list[-1]['Average Turnaround Time']}", font=("Times New Roman", 25), justify="center", padx = 300)
     average_label.grid(row=row_idx, column=0, sticky="w", pady=(20, 10))
